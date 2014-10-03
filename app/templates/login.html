@@ -1,0 +1,40 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<script type="text/javascript">
+function set_openid(openid, pr)
+{
+    u = openid.search('<username>')
+    if (u != -1) {
+        // openid requires username
+        user = prompt('Enter your ' + pr + ' username:')
+        openid = openid.substr(0, u) + user
+    }
+    form = document.forms['login'];
+    form.elements['openid'].value = openid
+}
+</script>
+  <h3>Sign In</h3>
+  <form action="" method="post" name="login">
+      {{ form.hidden_tag() }}
+      <p>
+          Identificarse con OpenID:<br>
+          {{ form.openid(size=80) }}<br>
+          <div class="starter-template content">
+          
+          {% for pr in providers %}
+                <a href="javascript:set_openid('{{ pr.url }}', '{{ pr.name }}');">{{ pr.name }}</a> |
+          {% endfor %}
+          
+          </div>
+           {% for error in form.openid.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+           {% endfor %}<br>
+      </p>
+      <p>{{ form.remember_me }} recordarme</p>
+      <p><input type="submit" value="Ingresar"></p>
+  </form>
+{% endblock %}
+
+
