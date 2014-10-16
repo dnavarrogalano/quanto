@@ -60,14 +60,11 @@ def traeIndicadoresxInstrumento ( nemo, fechaINI, fechaFIN = 0 ):
     , np.column_stack((fechanum, sma10))
 
 
-def grabaRegistros(self ,t,nombreTabla):
-
-    engine = create_engine('mysql://root:suba@localhost/stocksdb')
 
 
-    #con = self.conectaDB()
-   # pd.io.sql.write_frame(t, nombreTabla, con, if_exists="append")
-    pd.io.sql.to_sql(t, nombreTabla, engine, flavor='mysql', if_exists="append",)
+
+
+
 
 
 

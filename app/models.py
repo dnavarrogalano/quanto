@@ -45,6 +45,8 @@ class Categoria(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(50), index=True, unique=True)
     descripcion = db.Column(db.String(50))
+    acciones = db.relationship('Categorias_Acciones', backref='seccion', lazy='dynamic')
+    
     def __repr__(self):
         return '<Categoria %r>' % (self.nombre)
     
@@ -54,7 +56,7 @@ class Categorias_Acciones(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     categoria_id = db.Column(db.Integer, db.ForeignKey('categoria.id'), primary_key=True)
     accion_id = db.Column(db.Integer, db.ForeignKey('accion.id'), primary_key=True)
-
+    
 
 
 
