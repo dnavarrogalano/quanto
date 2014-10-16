@@ -3,9 +3,11 @@ from flask import render_template, flash, redirect, session, url_for, request, g
 from flask.ext.login import login_user, logout_user, current_user, \
     login_required
 from app import app, db, lm, oid
+import json
 
 from forms import LoginForm, EditForm
 from .models import User
+from  QueryStockOnline import traeIndicadoresxInstrumento
 #from QueryStock import BaseDatos
 
 
@@ -13,15 +15,38 @@ from .models import User
 def load_user(id):
     return User.query.get(int(id))
 
-@app.route('/ohlvc')
+@app.route('/ohlvc/<nemo>',methods=['GET', 'POST'])
 @login_required
-def queryStock():
-#    bd = BaseDatos()
-    data = "caca" #bd.consultaOHLCV("CENCOSUD","20140101")
+def queryStock(nemo):
+ 
+    #qstol = QueryStockOnline()
+    
+    
+    qst,bol_up,bol_down, volume, sma200, sma50, sma10 =   traeIndicadoresxInstrumento(str(nemo), "20120101", "20141010")
+
+
+    
+    #stockdata = {"data": qst}
+    stockdata = json.dumps(qst.tolist())
+    bollinger_up = json.dumps(bol_up.tolist())
+    bollinger_down = json.dumps(bol_down.tolist())
+    volume = json.dumps(volume.tolist())
+    sma200 = json.dumps(sma200.tolist())
+    sma50 = json.dumps(sma50.tolist())
+    sma10 = json.dumps(sma10.tolist())
+
+
     return render_template('ohlvc.html',
                            title='OHLVC',
+                           stockdata=stockdata,
+                           bol_up = bollinger_up,
+                           bol_down = bollinger_down,
+                           volume = volume,
+                           sma200=sma200,
+                           sma50=sma50,
+                           sma10=sma10,
                            user=g.user,
-                           data=data)
+                           data=nemo)
 
 
 

@@ -1,12 +1,12 @@
-call Scripts\pip install flask
-call Scripts\pip install flask-login
-call Scripts\pip install flask-openid
-call Scripts\pip install flask-mail
-call Scripts\pip install flask-sqlalchemy
-call Scripts\pip install sqlalchemy-migrate
-call Scripts\pip install flask-whooshalchemy
-call Scripts\pip install flask-wtf
-call Scripts\pip install flask-babel
-call Scripts\pip install guess_language
-call Scripts\pip install flipflop
-call Scripts\pip install coverage
+call python -m pip install flask
+call python -m pip install flask-login
+call python -m pip install flask-openid
+call python -m pip install flask-mail
+call python -m pip install flask-sqlalchemy
+call python -m pip install sqlalchemy-migrate
+call python -m pip install flask-whooshalchemy
+call python -m pip install flask-wtf
+call python -m pip install flask-babel
+call python -m pip install guess_language
+call python -m pip install flipflop
+call python -m pip install coverage
