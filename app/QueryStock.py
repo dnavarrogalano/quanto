@@ -9,6 +9,7 @@ import codecs
 from sqlalchemy import create_engine
 import ConnectDBMySQL as cnx
 from pandas.io import sql
+import talib
 
 folder = 'E:\\virtualenv\\Quanto_Backend\\Quanto\\stocks\\'
 folder2 = 'E:\\virtualenv\\Quanto_Backend\\Quanto\\stocks\\'
@@ -314,4 +315,45 @@ class QueryStock():
             f["stdev"] = np.nan_to_num(self.stdev(f["Close"], 2))
 
             bd.grabaRegistros(f, "t_indicadores")
+
+class Symbol():
+
+
+    def __init__(self, namo):
+        self._nemo = namo
+
+    def OCV(self, fechaINI, fechaFIN= None):
+
+            cnn = cnx.ConnectDBMySQL()
+            con = cnn.connectDB()
+            q = "select  unix_timestamp(Fecha) Fechanum, Fecha ,Close, Volume from  t_ohlcv where NANO = '%s' and Fecha >= %d "
+
+            #cursor = con.execute(q % (self._nemo, str(fechaINI)))
+
+            #engine = create_engine('mysql://root:suba@localhost/stocksdb')
+            df = pd.read_sql_query(q % (self._nemo, int(fechaINI)) , con, index_col = 'Fecha')
+            #df =  pd.read_sql(q, engine, index_col = 'Fecha')
+            #cursor.fetchall()
+
+            #df = pd.DataFrame(data, columns=['Fechanum','Fecha' ,'Close','Volume'])
+
+
+
+#			json_string = json.dumps(dict(cursor.fetchall()))
+#			con.close()
+#			return json_string
+            return df
+
+
+if __name__ == "__main__":
+    print "Inicio"
+    symbol = Symbol('LAN')
+    df = symbol.OCV('20140101')
+    df['rsi'] = talib.RSI(df['Close'].values)
+    df['ema'] = talib.EMA(df['Close'].values, timeperiod=5)
+    print df.tail(20)
+
+
+
+
 

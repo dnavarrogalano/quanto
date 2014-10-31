@@ -169,8 +169,7 @@ def macd_hist(prices):
     return hist
 
 if __name__ == "__main__":
-    print "~PyTA~"
-
+   
     x = open('d:/dev/stocks/antarchile.stk','rb')
     print x
 

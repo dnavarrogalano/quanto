@@ -1,6 +1,7 @@
 
 from app import db
 from hashlib import md5
+
 class User(db.Model):
     __tablename__ = 'user'
     id = db.Column(db.Integer, primary_key=True)

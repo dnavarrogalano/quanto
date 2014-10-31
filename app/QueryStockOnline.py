@@ -44,6 +44,8 @@ def traeIndicadoresxInstrumento ( nemo, fechaINI, fechaFIN = 0 ):
     
     cursor = conn.execute(query % (nemo , fechaINI) )
     ss =   np.array(cursor.fetchall())
+
+    
     fechanum = ss[0:,0]
     valorClose = ss[0:,1]
     bol_up = ss[0:,2]
@@ -58,12 +60,6 @@ def traeIndicadoresxInstrumento ( nemo, fechaINI, fechaFIN = 0 ):
     np.column_stack((fechanum, volume)), np.column_stack((fechanum, sma200)) \
     , np.column_stack((fechanum, sma50)) \
     , np.column_stack((fechanum, sma10))
-
-
-
-
-
-
 
 
 

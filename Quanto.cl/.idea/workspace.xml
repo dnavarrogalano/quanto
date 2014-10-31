@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce2f66a3-c434-4cb6-a4fd-f93ef0a09219" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../app/ConnectDBMySQL.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../app/QueryStock.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../app/templates/ohlvc.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../app/program.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../app.db" afterPath="$PROJECT_DIR$/../app.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../app/templates/base.html" afterPath="$PROJECT_DIR$/../app/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../app/templates/login.html" afterPath="$PROJECT_DIR$/../app/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../app/views.py" afterPath="$PROJECT_DIR$/../app/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../app/models.py" afterPath="$PROJECT_DIR$/../app/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../tests_datos.py" afterPath="$PROJECT_DIR$/../tests_datos.py" />
     </list>
     <ignored path="Quanto.cl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,6 +18,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Quanto.cl$views.coverage" NAME="views Coverage Results" MODIFIED="1413254966569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../app" />
     <SUITE FILE_PATH="coverage/Quanto.cl$Quanto_cl.coverage" NAME="Quanto.cl Coverage Results" MODIFIED="1412902185454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Quanto.cl$tests_datos.coverage" NAME="tests_datos Coverage Results" MODIFIED="1413944769638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/Quanto.cl$run.coverage" NAME="run Coverage Results" MODIFIED="1413261877616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -37,101 +33,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="run.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../run.py">
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../app/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="34" selection-start="656" selection-end="656" vertical-scroll-proportion="0.40350878" vertical-offset="236" max-vertical-offset="2482">
+            <state line="54" column="0" selection-start="1625" selection-end="1625" vertical-scroll-proportion="0.4742268" vertical-offset="734" max-vertical-offset="1190">
               <folding>
-                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#1#19#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ohlvc.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app/templates/ohlvc.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="14" selection-start="128" selection-end="128" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnectDBMySQL.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app/ConnectDBMySQL.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="program.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app/program.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="3977" selection-end="3977" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueryStock.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app/QueryStock.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="8" selection-start="798" selection-end="798" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="5491">
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="9" selection-start="604" selection-end="604" vertical-scroll-proportion="-5.8846154" vertical-offset="119" max-vertical-offset="1139">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app/templates/user.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="238">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="32" selection-start="32" selection-end="58" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="799">
-              <folding>
-                <element signature="n#style#0;n#p#0;n#form#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#form#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app/templates/edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="572" selection-end="586" vertical-scroll-proportion="-9.192307" vertical-offset="135" max-vertical-offset="476">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -159,6 +67,8 @@
         <option value="$PROJECT_DIR$/../app/templates/base.html" />
         <option value="$PROJECT_DIR$/../app/templates/ohlvc.html" />
         <option value="$PROJECT_DIR$/../app/views.py" />
+        <option value="$PROJECT_DIR$/../app/models.py" />
+        <option value="$PROJECT_DIR$/../tests_datos.py" />
       </list>
     </option>
   </component>
@@ -194,26 +104,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quanto.cl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quanto.cl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quanto.cl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -262,26 +152,24 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Quanto.cl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Q">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Quanto.cl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="E:\virtualenv\Q">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="templates">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Quanto.cl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -291,8 +179,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Quanto_Backend" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
@@ -306,7 +194,7 @@
       <recent name="E:\virtualenv\Q\app" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Python.tests_datos">
     <configuration default="false" name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -345,6 +233,25 @@
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tests_datos" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="E:/Python27/python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Q" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../tests_datos.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -431,9 +338,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -455,6 +359,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -516,15 +423,17 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.Quanto.cl" />
       <item index="1" class="java.lang.String" itemvalue="Python.run" />
       <item index="2" class="java.lang.String" itemvalue="Python.views" />
+      <item index="3" class="java.lang.String" itemvalue="Python.tests_datos" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.run" />
-        <item index="1" class="java.lang.String" itemvalue="Python.views" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.tests_datos" />
+        <item index="1" class="java.lang.String" itemvalue="Python.run" />
+        <item index="2" class="java.lang.String" itemvalue="Python.views" />
       </list>
     </recent_temporary>
   </component>
@@ -539,7 +448,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -574,26 +483,26 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/../app/views.py</url>
-          <line>38</line>
+          <line>63</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/../app/models.py</url>
-          <line>4</line>
+          <line>6</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/../app/views.py</url>
-          <line>12</line>
+          <line>14</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/../app/views.py</url>
-          <line>51</line>
+          <line>76</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/../app/views.py</url>
-          <line>56</line>
+          <line>81</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
@@ -604,55 +513,14 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Lib/site-packages/flask/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="739" selection-end="739" vertical-scroll-proportion="0.31024095" vertical-offset="356" max-vertical-offset="2873">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Lib/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1014" column="0" selection-start="44680" selection-end="44680" vertical-scroll-proportion="0.0" vertical-offset="16710" max-vertical-offset="30991">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Lib/site-packages/werkzeug/serving.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="518" column="0" selection-start="18297" selection-end="18297" vertical-scroll-proportion="0.3313253" vertical-offset="8577" max-vertical-offset="12716">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Python27/Lib/subprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1007" column="0" selection-start="36107" selection-end="36107" vertical-scroll-proportion="0.0" vertical-offset="17009" max-vertical-offset="27659">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <folding>
-            <element signature="e#1#19#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../app/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="46" selection-end="237" vertical-scroll-proportion="0.098265894" vertical-offset="0" max-vertical-offset="346">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="46" selection-end="237" vertical-scroll-proportion="0.098265894" vertical-offset="0" max-vertical-offset="346" />
       </provider>
     </entry>
     <entry file="file://E:/Python27/Lib/SocketServer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="0" selection-start="5999" selection-end="5999" vertical-scroll-proportion="0.2956989" vertical-offset="2440" max-vertical-offset="12495">
-          <folding />
-        </state>
+        <state line="154" column="0" selection-start="5999" selection-end="5999" vertical-scroll-proportion="0.2956989" vertical-offset="2440" max-vertical-offset="12495" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../app/templates/user.html">
@@ -664,7 +532,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../app/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="9" selection-start="604" selection-end="604" vertical-scroll-proportion="-5.8846154" vertical-offset="119" max-vertical-offset="1139">
+        <state line="16" column="9" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1173">
           <folding />
         </state>
       </provider>
@@ -676,53 +544,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app/program.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="3977" selection-end="3977" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app/QueryStock.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="8" selection-start="798" selection-end="798" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="5491">
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../app/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="32" selection-start="32" selection-end="58" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="799">
-          <folding>
-            <element signature="n#style#0;n#p#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../app/templates/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="572" selection-end="586" vertical-scroll-proportion="-9.192307" vertical-offset="135" max-vertical-offset="476">
+        <state line="22" column="0" selection-start="572" selection-end="586" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="476">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../app/templates/ohlvc.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="128" selection-end="128" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
+        <state line="149" column="0" selection-start="3396" selection-end="3396" vertical-scroll-proportion="0.0" vertical-offset="2533" max-vertical-offset="2635">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="34" selection-start="656" selection-end="656" vertical-scroll-proportion="0.40350878" vertical-offset="236" max-vertical-offset="2482">
+        <state line="165" column="63" selection-start="4752" selection-end="4752" vertical-scroll-proportion="0.0" vertical-offset="2276" max-vertical-offset="2907">
           <folding>
             <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../app/program.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="136">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../app/borrar_datos_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../app/QueryStock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5321">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../app/QueryStockOnline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tests_datos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="31" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="0" selection-start="1625" selection-end="1625" vertical-scroll-proportion="0.4742268" vertical-offset="734" max-vertical-offset="1190">
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

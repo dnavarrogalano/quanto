@@ -25,6 +25,13 @@ class ConnectDBMySQL():
         basedatos = 'stocksdb'
 
     def connectDB(self):
-            con = _mysql.connect(server, usuario, password, basedatos)
+            #con = _mysql.connect(server, usuario, password, basedatos)
             engine = create_engine('mysql://root:suba@localhost/stocksdb')
             return engine
+
+CONNECTIONSTRING = 'mysql://root:suba@localhost/stocksdb'
+
+folder = 'E:\\virtualenv\\Quanto_Backend\\Quanto\\stocks\\'
+folder2 = 'E:\\virtualenv\\Quanto_Backend\\Quanto\\stocks\\'
+
+
